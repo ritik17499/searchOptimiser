@@ -41,9 +41,9 @@ We evaluated the architecture on a strict Recall@K vector search against a datab
 
 <br>
 <p align="center">
-  <img src="recall_curve.png" alt="Recall@K Performance Curve" width="45%">
+  <img src="assets/recall_curve.png" alt="Recall@K Performance Curve" width="45%">
   &nbsp; &nbsp;
-  <img src="recall_barchart.png" alt="Absolute Retrieval Gains Bar Chart" width="45%">
+  <img src="assets/recall_barchart.png" alt="Absolute Retrieval Gains Bar Chart" width="45%">
 </p>
 
 ---
