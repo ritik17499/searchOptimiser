@@ -51,12 +51,13 @@ We evaluated the architecture on a strict Recall@K vector search against a datab
 ## 📁 Repository Structure
 
 ```text
-├── dataset.py               # Custom PyTorch Dataset for loading images & CoT JSON
+├── utils/dataset.py               # Custom PyTorch Dataset for loading images & CoT JSON
 ├── evaluate_recall.py       # Inference script: Builds vector DB & calculates Recall@K
-├── model.py                 # Core architecture: LoRA CLIP Text Encoder + 2D U-Net Bridge
-├── scheduler.py             # DDPM Noise Scheduler implementation for the forward process
+├── utils/model.py                 # Core architecture: LoRA CLIP Text Encoder + 2D U-Net Bridge
+├── utils/scheduler.py             # DDPM Noise Scheduler implementation for the forward process
 ├── train.py                 # Training loop featuring Dual-Objective Joint Loss math
-├── appliances_cot_ready.json # Preprocessed Chain-of-Thought dataset (required)
+├── dataset/generate_cot.py # Generate our structured captions through COT
+├── dataset/download.py # To download the dataset
 ├── downloaded_images/       # Directory containing raw product images (required)
 └── model_checkpoints/       # Directory where trained .pt weights are saved
 ```
