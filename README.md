@@ -56,8 +56,8 @@ We evaluated the architecture on a strict Recall@K vector search against a datab
 ├── utils/model.py                 # Core architecture: LoRA CLIP Text Encoder + 2D U-Net Bridge
 ├── utils/scheduler.py             # DDPM Noise Scheduler implementation for the forward process
 ├── train.py                 # Training loop featuring Dual-Objective Joint Loss math
-├── dataset/generate_cot.py # Generate our structured captions through COT
-├── dataset/download.py # To download the dataset
+├── dataset/generate_cot.py        # Generate our structured captions through COT
+├── dataset/download.py            # To download the dataset
 ├── downloaded_images/       # Directory containing raw product images (required)
 └── model_checkpoints/       # Directory where trained .pt weights are saved
 ```
